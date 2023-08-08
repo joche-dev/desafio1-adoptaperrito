@@ -4,7 +4,7 @@ import './Card.css'
 
 function Card({ urlImagen, nombre, descripcion, raza, color }) {
   return (
-    <div classname="col">
+    <div className="col">
       <CardDog className="h-100">
         <CardDog.Img variant="top" src={urlImagen} />
         <CardDog.Body className="d-flex flex-column">

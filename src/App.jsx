@@ -8,6 +8,7 @@ import Footer from './componentes/Footer';
 function App() {
   const perritos = [
     {
+      id: 1,
       url: 'https://images.pexels.com/photos/3763313/pexels-photo-3763313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       nombre: 'Manchas',
       descripcion:
@@ -16,6 +17,7 @@ function App() {
       colorTag: 'primary',
     },
     {
+      id: 2,
       url: 'https://images.pexels.com/photos/248307/pexels-photo-248307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       nombre: 'Leon',
       descripcion:
@@ -24,6 +26,7 @@ function App() {
       colorTag: 'warning',
     },
     {
+      id: 3,
       url: 'https://images.pexels.com/photos/257519/pexels-photo-257519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       nombre: 'Tiburon',
       descripcion:
@@ -32,6 +35,7 @@ function App() {
       colorTag: 'success',
     },
     {
+      id: 4,
       url: 'https://images.pexels.com/photos/374906/pexels-photo-374906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       nombre: 'Pulga',
       descripcion:
@@ -48,6 +52,7 @@ function App() {
       <main className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
         {perritos.map((perrito) => (
           <Card
+            key={perrito.id}
             urlImagen={perrito.url}
             nombre={perrito.nombre}
             descripcion={perrito.descripcion}
